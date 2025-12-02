@@ -1,0 +1,114 @@
+/*1.Universal selector
+*{
+    border:1px solid red;
+}
+    */
+
+
+/*tag selector */
+h1{
+    background-color:green;
+}
+
+/*id Selector */
+#b{
+    color:red;
+    background-color: yellow;
+}
+
+/*class selector */
+.b{
+    /*color:blue */
+    border:10 px solid;
+}
+
+/*Group selector*/
+/*when you are selecting multiple tags without class selector */
+h1,
+h2{
+    color:blueviolet;
+}
+
+/*descendent selector*/
+div p{
+    color:red;
+    background-color: yellow;
+    
+}
+
+/*child selector*/
+div >p{
+    color:green;
+    background-color: blue;
+}
+
+/*attribute selector */
+button[type="submit"]{
+    color:red;
+    font-size:32px;
+}
+
+
+.s{
+    color:red;
+    font-size:32px;
+}
+
+/*pseudo selctore*/
+li:nth-child(2){
+    color:yellow;
+}
+/*whenever we touch that will specify*/
+
+li:hover{
+    color:yellow;
+    background-color: red;
+    font-size:38 px;
+}
+
+/*pseudo elemets*/
+#a::before{
+    content:"writtebn by css";
+}
+/*pseudo elemnts will only eork on a block level */
+
+.b::first-letter{
+    font-size:40px;
+    color:red;
+}
+#q{
+    display:block;/*we can change all the thingd usinf display*/
+}
+
+#q::first-letter{
+    font-size:40px;
+}
+
+.d::first-letter{
+    font-size:50px;
+    color:skyblue;
+}
+
+
+
+/*box model
+content
+padding
+margin=>space outside the border
+padding=>the space between the content and border ,yoy can also wrote for 4 directions(it will work for clock wise ),when you try only two values 
+1st one=>top and bottom     2nd one=>left and right
+*/
+
+*{
+    padding:0;
+    margin:0;
+}
+/*box model*/
+h1:nth-child(1){
+    border:3px solid red;
+    padding:30px;
+    padding:10px 20px 40px 60px;
+    /*
+    padding:20px 10px;
+    margin:80 px; */
+}
