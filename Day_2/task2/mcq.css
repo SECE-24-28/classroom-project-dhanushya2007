@@ -1,34 +1,46 @@
-#head1{
-    text-align: center;
-    color: white;
+body {
+  background-color: rgba(205, 200, 200, 0.717);
+}
+header {
+  background-color: rgb(13, 87, 246);
+  text-align: center;
+  color: white;
 }
 
-h1{
-    border: 1px solid red;
+#a {
+   border-radius: 10px;
+   border: 6px solid rgb(243, 112, 5);
+   border-radius: 1px;
+   margin: 10px;
 }
-
-#main1{
-    background-color: blue;
-    padding: 5px;
-    border-radius: 10px;
+.cls1 {
+  background-color: white;
+  margin-left: 200px;
+  margin-right: 200px;
+  box-sizing: content-box;
+  border: 20px;
 }
-
-.main{
-    background-color: red;
+.ques1 {
+  background-color: whitesmoke;
+  margin: 20px;
+  padding: 10px;
+  border: 1px  gray;
 }
-
-.submain{
-    background-color: white;
+button[type="submit"]
+{
+    background-color: greenyellow;
+    align-items: center;
 }
-
-.bg{
-    background-color: rgb(223, 234, 237);
-    padding: 10px 3px;
-    border-radius: 5px;
-    margin: 15px 2px;
+.boxmodel
+{
+    width:300px;
+   margin: 20px;
+   box-sizing: border-box;
+   border: 4px solid rgb(65, 8, 236);
+   text-align: center;
+   background-color: rgb(244, 244, 118);
 }
-
-.sub1{
-    padding: 0;
-    background-color: beige;
+#b
+{
+    padding-left: 10px;
 }
