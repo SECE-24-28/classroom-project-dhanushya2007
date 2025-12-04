@@ -1,0 +1,33 @@
+
+.flexContainer{
+    border:1px solid red;
+    display:flex;
+    height:90vh;
+   /* justify-content:center;
+   align-items:center;
+   flex-direction:column-reverse;
+   justify-content: flex-end;
+   align-items: center;*/
+   gap:10px;
+   flex-wrap: wrap;
+   align-content:flex-start ;
+}
+/*wrap values => no wrap,wrap,wrap reverse    
+only we use the flex wrap the alihn content will work*/
+/*values of justofy content 
+flex-start ,center,space-aroubd
+space-between,space-evenly*/
+
+.flexItem{
+    background-color: yellow;
+    border: 2px solid red;
+    color: red;
+    font-size: 24px;
+    height:100px;
+    width: 100px;
+
+}
+
+
+
+

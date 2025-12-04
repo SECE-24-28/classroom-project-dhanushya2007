@@ -1,0 +1,26 @@
+.flexContainer{
+    border:1px solid red;
+    display:flex;
+    height:10vh;
+}
+.flexItem{
+background-color: yellow;
+    border: 2px solid red;
+    color: red;
+}
+/*to place item at the end we have to use greater value from 0
+to put in the starting we need negative value
+default oreder of ever element eill be 0
+
+flex flow=>first direction 
+*/
+
+.flexItem:nth-child(1){
+    order:1;
+    align-self:center;
+}
+.flexItem{
+    order:-1;
+    align-self:flex-end;
+
+}
