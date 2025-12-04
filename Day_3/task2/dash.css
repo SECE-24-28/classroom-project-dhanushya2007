@@ -1,0 +1,62 @@
+.container div{
+    display: grid;
+    border: 1px solid black;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10vh 85vh;
+    grid-template-areas: "h h h"
+    "m b1 b1";
+    border: 1px solid black;
+}
+
+.header{
+    grid-area: h;
+}
+
+.menu{
+    grid-area: m;
+}
+
+.body1{
+grid-area: b1;
+}
+
+.header{
+    background-color: rgba(94, 169, 255, 0.882);
+    color: aliceblue;
+}
+
+.menu{
+    background-color: rgb(2, 2, 115);
+    color: aliceblue;
+}
+
+.body1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    align-content: start;
+    background-color: rgb(239, 239, 239);
+}
+
+.b1{
+    
+    margin: 10px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+    border-left: 5px solid #007bff; 
+}
+.b2{
+    
+    margin: 10px;
+    height: 50px;
+    border-radius: 7px;
+    background-color: white;
+}
