@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    background-color: black;
+}
+#c1{
+    
+    margin:10px;
+    height:50px;
+    width:100px;
+    background-color: lightgray;
+}
+.number{
+    color:white;
+    margin-bottom:50px;
+    margin-left :500px;
+}
+.g{
+    padding:40px;
+    color:white;
+    text-align: center;
+}
+.guess{
+    color:white;
+}
+.right{
+    color:white;
+}
+.message{
+     margin-left :500px;
+}
+.label-score{
+    margin-left:500px;
+    
+}
+.label-highscore{
+    margin-left:500px;
+}
+.left{
+    margin:40px;
+}
