@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            text-align:center;
+            margin-left:50px;
+        }
+      #feedbackForm{
+         height: 100px;
+            display: flex;
+            padding-top: 20px;
+            align-items: center;
+            flex-direction: column;
+            border:1px solid grey;
+            height:280px;
+            width:350px;
+            margin-left:600px;
+            border-radius: 10px;
+            background-color:lightgray;
+            gap:10px;
+      }
+      #name{
+        width:300px;
+        height:30px;
+      }  
+      #course{
+         width:300px;
+        height:30px;
+      }
+      label{
+        margin-right: 200px;
+      }
+      #rating{
+        width:300px;
+        height:30px;
+      }
+      #feedback{
+        width:300px;
+        height:30px;
+      }
+      button{
+        width:280px;
+        height:30px;
+        background-color:blue;
+        color:white;
+        border-radius: 5px;
+      }
+      option{
+        background-color: black;
+        color:white;
+      }
+      #course:focus {
+  background-color: #007BFF;  /* blue background */
+  color: white;               /* white text */
+  outline: none;
+}
+
+      #feedbackList {
+        display:flex; 
+       margin-top: 20px;
+       margin-left: 600px;
+       gap:10px;
+       flex-wrap:nowrap;
+      
+}
+
+.q {
+  background-color: lightgreen;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  font-family: sans-serif;
+ 
+}
+
+
+    </style>
+     <script src="task.js" defer></script>
+</head>
+<body>
+
+<h2>Student Feedback Form</h2>
+
+    <form id="feedbackForm">
+      <input type="text" id="name" placeholder="Enter your name" required />
+     <br>
+      <select id="course" required>
+        <option class="">Select Course</option>
+        <option class="c1">HTML & CSS</option>
+        <option class="c1">JavaScript</option>
+        <option class="c1">React JS</option>
+        <option class="c1">Node JS</option>
+      </select>
+      <label>Rating (1 to 5):</label>
+      <input type="range" id="rating" min="1" max="5" value="3" />
+      <textarea
+        id="feedback"
+        placeholder="Write your feedback..."
+        required
+      ></textarea>
+      <button type="submit">Submit Feedback</button>
+    </form>
+    <div id="output"></div>
+    <div id="feedbackList"></div>
+
+</body>
+</html>
